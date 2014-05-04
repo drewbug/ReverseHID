@@ -13,5 +13,6 @@ Motion::Project::App.setup do |app|
   app.name = 'ReverseHID'
   app.frameworks << 'IOBluetooth'
   app.frameworks_dependencies << 'IOKit'
-  app.bridgesupport_files << '/System/Library/Frameworks/IOKit.framework/Resources/BridgeSupport/IOKit.bridgesupport'
+  `patch -o ./bridge/IOKit.bridgesupport /System/Library/Frameworks/IOKit.framework/Resources/BridgeSupport/IOKit.bridgesupport ./bridge/IOKit.patch`
+  app.bridgesupport_files << './bridge/IOKit.bridgesupport'
 end

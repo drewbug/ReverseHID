@@ -1,0 +1,694 @@
+7884,7888c7884,7889
+< <function name='IODispatchCalloutFromMessage'>
+< <arg type='^v'/>
+< <arg type='^{_mach_msg_header_t=IIIIIi}'/>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IODispatchCalloutFromMessage'>
+> <arg type='^v'/>
+> <arg type='^{_mach_msg_header_t=IIIIIi}'/>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8002,8011c8003,8013
+< <function name='IOFBBurstWrite32'>
+< <arg type='^v'/>
+< <arg type='^v'/>
+< <arg type='^v'/>
+< <arg type='^v'/>
+< <arg type='^v'/>
+< <arg type='^v'/>
+< <arg type='^v'/>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IOFBBurstWrite32'>
+> <arg type='^v'/>
+> <arg type='^v'/>
+> <arg type='^v'/>
+> <arg type='^v'/>
+> <arg type='^v'/>
+> <arg type='^v'/>
+> <arg type='^v'/>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8186,8188c8188,8191
+< <function name='IOFBSetBurstRef'>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IOFBSetBurstRef'>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8395,8410c8398,8414
+< <function name='IOHIDDeviceRegisterInputReportCallback'>
+< <arg type='^{__IOHIDDevice=}'/>
+< <arg type='*'/>
+< <arg type='l' type64='q'/>
+< <arg function_pointer='true' type='^?'>
+< <arg type='^v'/>
+< <arg type='i'/>
+< <arg type='^v'/>
+< <arg type='i'/>
+< <arg type='I'/>
+< <arg type='*'/>
+< <arg type='l' type64='q'/>
+< <retval type='v'/>
+< </arg>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IOHIDDeviceRegisterInputReportCallback'>
+> <arg type='^{__IOHIDDevice=}'/>
+> <arg type='*'/>
+> <arg type='l' type64='q'/>
+> <arg function_pointer='true' type='^?'>
+> <arg type='^v'/>
+> <arg type='i'/>
+> <arg type='^v'/>
+> <arg type='i'/>
+> <arg type='I'/>
+> <arg type='*'/>
+> <arg type='l' type64='q'/>
+> <retval type='v'/>
+> </arg>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8411,8421c8415,8426
+< <function name='IOHIDDeviceRegisterInputValueCallback'>
+< <arg type='^{__IOHIDDevice=}'/>
+< <arg function_pointer='true' type='^?'>
+< <arg type='^v'/>
+< <arg type='i'/>
+< <arg type='^v'/>
+< <arg type='^{__IOHIDValue=}'/>
+< <retval type='v'/>
+< </arg>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IOHIDDeviceRegisterInputValueCallback'>
+> <arg type='^{__IOHIDDevice=}'/>
+> <arg function_pointer='true' type='^?'>
+> <arg type='^v'/>
+> <arg type='i'/>
+> <arg type='^v'/>
+> <arg type='^{__IOHIDValue=}'/>
+> <retval type='v'/>
+> </arg>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8422,8431c8427,8437
+< <function name='IOHIDDeviceRegisterRemovalCallback'>
+< <arg type='^{__IOHIDDevice=}'/>
+< <arg function_pointer='true' type='^?'>
+< <arg type='^v'/>
+< <arg type='i'/>
+< <arg type='^v'/>
+< <retval type='v'/>
+< </arg>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IOHIDDeviceRegisterRemovalCallback'>
+> <arg type='^{__IOHIDDevice=}'/>
+> <arg function_pointer='true' type='^?'>
+> <arg type='^v'/>
+> <arg type='i'/>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </arg>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8432,8436c8438,8443
+< <function name='IOHIDDeviceScheduleWithRunLoop'>
+< <arg type='^{__IOHIDDevice=}'/>
+< <arg type='^{__CFRunLoop=}'/>
+< <arg type='^{__CFString=}'/>
+< </function>
+---
+> <function name='IOHIDDeviceScheduleWithRunLoop'>
+> <arg type='^{__IOHIDDevice=}'/>
+> <arg type='^{__CFRunLoop=}'/>
+> <arg type='^{__CFString=}'/>
+> <retval type='v'/>
+> </function>
+8437,8440c8444,8448
+< <function name='IOHIDDeviceSetInputValueMatching'>
+< <arg type='^{__IOHIDDevice=}'/>
+< <arg type='^{__CFDictionary=}'/>
+< </function>
+---
+> <function name='IOHIDDeviceSetInputValueMatching'>
+> <arg type='^{__IOHIDDevice=}'/>
+> <arg type='^{__CFDictionary=}'/>
+> <retval type='v'/>
+> </function>
+8441,8444c8449,8453
+< <function name='IOHIDDeviceSetInputValueMatchingMultiple'>
+< <arg type='^{__IOHIDDevice=}'/>
+< <arg type='^{__CFArray=}'/>
+< </function>
+---
+> <function name='IOHIDDeviceSetInputValueMatchingMultiple'>
+> <arg type='^{__IOHIDDevice=}'/>
+> <arg type='^{__CFArray=}'/>
+> <retval type='v'/>
+> </function>
+8519,8523c8528,8533
+< <function name='IOHIDDeviceUnscheduleFromRunLoop'>
+< <arg type='^{__IOHIDDevice=}'/>
+< <arg type='^{__CFRunLoop=}'/>
+< <arg type='^{__CFString=}'/>
+< </function>
+---
+> <function name='IOHIDDeviceUnscheduleFromRunLoop'>
+> <arg type='^{__IOHIDDevice=}'/>
+> <arg type='^{__CFRunLoop=}'/>
+> <arg type='^{__CFString=}'/>
+> <retval type='v'/>
+> </function>
+8524,8527c8534,8538
+< <function name='IOHIDElementAttach'>
+< <arg type='^{__IOHIDElement=}'/>
+< <arg type='^{__IOHIDElement=}'/>
+< </function>
+---
+> <function name='IOHIDElementAttach'>
+> <arg type='^{__IOHIDElement=}'/>
+> <arg type='^{__IOHIDElement=}'/>
+> <retval type='v'/>
+> </function>
+8537,8540c8548,8552
+< <function name='IOHIDElementDetach'>
+< <arg type='^{__IOHIDElement=}'/>
+< <arg type='^{__IOHIDElement=}'/>
+< </function>
+---
+> <function name='IOHIDElementDetach'>
+> <arg type='^{__IOHIDElement=}'/>
+> <arg type='^{__IOHIDElement=}'/>
+> <retval type='v'/>
+> </function>
+8734,8744c8746,8757
+< <function name='IOHIDManagerRegisterDeviceMatchingCallback'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg function_pointer='true' type='^?'>
+< <arg type='^v'/>
+< <arg type='i'/>
+< <arg type='^v'/>
+< <arg type='^{__IOHIDDevice=}'/>
+< <retval type='v'/>
+< </arg>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IOHIDManagerRegisterDeviceMatchingCallback'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg function_pointer='true' type='^?'>
+> <arg type='^v'/>
+> <arg type='i'/>
+> <arg type='^v'/>
+> <arg type='^{__IOHIDDevice=}'/>
+> <retval type='v'/>
+> </arg>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8745,8755c8758,8769
+< <function name='IOHIDManagerRegisterDeviceRemovalCallback'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg function_pointer='true' type='^?'>
+< <arg type='^v'/>
+< <arg type='i'/>
+< <arg type='^v'/>
+< <arg type='^{__IOHIDDevice=}'/>
+< <retval type='v'/>
+< </arg>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IOHIDManagerRegisterDeviceRemovalCallback'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg function_pointer='true' type='^?'>
+> <arg type='^v'/>
+> <arg type='i'/>
+> <arg type='^v'/>
+> <arg type='^{__IOHIDDevice=}'/>
+> <retval type='v'/>
+> </arg>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8756,8769c8770,8784
+< <function name='IOHIDManagerRegisterInputReportCallback'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg function_pointer='true' type='^?'>
+< <arg type='^v'/>
+< <arg type='i'/>
+< <arg type='^v'/>
+< <arg type='i'/>
+< <arg type='I'/>
+< <arg type='*'/>
+< <arg type='l' type64='q'/>
+< <retval type='v'/>
+< </arg>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IOHIDManagerRegisterInputReportCallback'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg function_pointer='true' type='^?'>
+> <arg type='^v'/>
+> <arg type='i'/>
+> <arg type='^v'/>
+> <arg type='i'/>
+> <arg type='I'/>
+> <arg type='*'/>
+> <arg type='l' type64='q'/>
+> <retval type='v'/>
+> </arg>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8770,8780c8785,8796
+< <function name='IOHIDManagerRegisterInputValueCallback'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg function_pointer='true' type='^?'>
+< <arg type='^v'/>
+< <arg type='i'/>
+< <arg type='^v'/>
+< <arg type='^{__IOHIDValue=}'/>
+< <retval type='v'/>
+< </arg>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IOHIDManagerRegisterInputValueCallback'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg function_pointer='true' type='^?'>
+> <arg type='^v'/>
+> <arg type='i'/>
+> <arg type='^v'/>
+> <arg type='^{__IOHIDValue=}'/>
+> <retval type='v'/>
+> </arg>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8781,8787c8797,8804
+< <function name='IOHIDManagerSaveToPropertyDomain'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg type='^{__CFString=}'/>
+< <arg type='^{__CFString=}'/>
+< <arg type='^{__CFString=}'/>
+< <arg type='L' type64='I'/>
+< </function>
+---
+> <function name='IOHIDManagerSaveToPropertyDomain'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg type='^{__CFString=}'/>
+> <arg type='^{__CFString=}'/>
+> <arg type='^{__CFString=}'/>
+> <arg type='L' type64='I'/>
+> <retval type='v'/>
+> </function>
+8788,8792c8805,8810
+< <function name='IOHIDManagerScheduleWithRunLoop'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg type='^{__CFRunLoop=}'/>
+< <arg type='^{__CFString=}'/>
+< </function>
+---
+> <function name='IOHIDManagerScheduleWithRunLoop'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg type='^{__CFRunLoop=}'/>
+> <arg type='^{__CFString=}'/>
+> <retval type='v'/>
+> </function>
+8793,8796c8811,8815
+< <function name='IOHIDManagerSetDeviceMatching'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg type='^{__CFDictionary=}'/>
+< </function>
+---
+> <function name='IOHIDManagerSetDeviceMatching'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg type='^{__CFDictionary=}'/>
+> <retval type='v'/>
+> </function>
+8797,8800c8816,8820
+< <function name='IOHIDManagerSetDeviceMatchingMultiple'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg type='^{__CFArray=}'/>
+< </function>
+---
+> <function name='IOHIDManagerSetDeviceMatchingMultiple'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg type='^{__CFArray=}'/>
+> <retval type='v'/>
+> </function>
+8801,8804c8821,8825
+< <function name='IOHIDManagerSetInputValueMatching'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg type='^{__CFDictionary=}'/>
+< </function>
+---
+> <function name='IOHIDManagerSetInputValueMatching'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg type='^{__CFDictionary=}'/>
+> <retval type='v'/>
+> </function>
+8805,8808c8826,8830
+< <function name='IOHIDManagerSetInputValueMatchingMultiple'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg type='^{__CFArray=}'/>
+< </function>
+---
+> <function name='IOHIDManagerSetInputValueMatchingMultiple'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg type='^{__CFArray=}'/>
+> <retval type='v'/>
+> </function>
+8815,8819c8837,8842
+< <function name='IOHIDManagerUnscheduleFromRunLoop'>
+< <arg type='^{__IOHIDManager=}'/>
+< <arg type='^{__CFRunLoop=}'/>
+< <arg type='^{__CFString=}'/>
+< </function>
+---
+> <function name='IOHIDManagerUnscheduleFromRunLoop'>
+> <arg type='^{__IOHIDManager=}'/>
+> <arg type='^{__CFRunLoop=}'/>
+> <arg type='^{__CFString=}'/>
+> <retval type='v'/>
+> </function>
+8830,8833c8853,8857
+< <function name='IOHIDQueueAddElement'>
+< <arg type='^{__IOHIDQueue=}'/>
+< <arg type='^{__IOHIDElement=}'/>
+< </function>
+---
+> <function name='IOHIDQueueAddElement'>
+> <arg type='^{__IOHIDQueue=}'/>
+> <arg type='^{__IOHIDElement=}'/>
+> <retval type='v'/>
+> </function>
+8866,8875c8890,8900
+< <function name='IOHIDQueueRegisterValueAvailableCallback'>
+< <arg type='^{__IOHIDQueue=}'/>
+< <arg function_pointer='true' type='^?'>
+< <arg type='^v'/>
+< <arg type='i'/>
+< <arg type='^v'/>
+< <retval type='v'/>
+< </arg>
+< <arg type='^v'/>
+< </function>
+---
+> <function name='IOHIDQueueRegisterValueAvailableCallback'>
+> <arg type='^{__IOHIDQueue=}'/>
+> <arg function_pointer='true' type='^?'>
+> <arg type='^v'/>
+> <arg type='i'/>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </arg>
+> <arg type='^v'/>
+> <retval type='v'/>
+> </function>
+8876,8879c8901,8905
+< <function name='IOHIDQueueRemoveElement'>
+< <arg type='^{__IOHIDQueue=}'/>
+< <arg type='^{__IOHIDElement=}'/>
+< </function>
+---
+> <function name='IOHIDQueueRemoveElement'>
+> <arg type='^{__IOHIDQueue=}'/>
+> <arg type='^{__IOHIDElement=}'/>
+> <retval type='v'/>
+> </function>
+8880,8884c8906,8911
+< <function name='IOHIDQueueScheduleWithRunLoop'>
+< <arg type='^{__IOHIDQueue=}'/>
+< <arg type='^{__CFRunLoop=}'/>
+< <arg type='^{__CFString=}'/>
+< </function>
+---
+> <function name='IOHIDQueueScheduleWithRunLoop'>
+> <arg type='^{__IOHIDQueue=}'/>
+> <arg type='^{__CFRunLoop=}'/>
+> <arg type='^{__CFString=}'/>
+> <retval type='v'/>
+> </function>
+8885,8888c8912,8916
+< <function name='IOHIDQueueSetDepth'>
+< <arg type='^{__IOHIDQueue=}'/>
+< <arg type='l' type64='q'/>
+< </function>
+---
+> <function name='IOHIDQueueSetDepth'>
+> <arg type='^{__IOHIDQueue=}'/>
+> <arg type='l' type64='q'/>
+> <retval type='v'/>
+> </function>
+8889,8891c8917,8920
+< <function name='IOHIDQueueStart'>
+< <arg type='^{__IOHIDQueue=}'/>
+< </function>
+---
+> <function name='IOHIDQueueStart'>
+> <arg type='^{__IOHIDQueue=}'/>
+> <retval type='v'/>
+> </function>
+8892,8894c8921,8924
+< <function name='IOHIDQueueStop'>
+< <arg type='^{__IOHIDQueue=}'/>
+< </function>
+---
+> <function name='IOHIDQueueStop'>
+> <arg type='^{__IOHIDQueue=}'/>
+> <retval type='v'/>
+> </function>
+8895,8899c8925,8930
+< <function name='IOHIDQueueUnscheduleFromRunLoop'>
+< <arg type='^{__IOHIDQueue=}'/>
+< <arg type='^{__CFRunLoop=}'/>
+< <arg type='^{__CFString=}'/>
+< </function>
+---
+> <function name='IOHIDQueueUnscheduleFromRunLoop'>
+> <arg type='^{__IOHIDQueue=}'/>
+> <arg type='^{__CFRunLoop=}'/>
+> <arg type='^{__CFString=}'/>
+> <retval type='v'/>
+> </function>
+8978,8981c9009,9013
+< <function name='IOHIDTransactionAddElement'>
+< <arg type='^{__IOHIDTransaction=}'/>
+< <arg type='^{__IOHIDElement=}'/>
+< </function>
+---
+> <function name='IOHIDTransactionAddElement'>
+> <arg type='^{__IOHIDTransaction=}'/>
+> <arg type='^{__IOHIDElement=}'/>
+> <retval type='v'/>
+> </function>
+8982,8984c9014,9017
+< <function name='IOHIDTransactionClear'>
+< <arg type='^{__IOHIDTransaction=}'/>
+< </function>
+---
+> <function name='IOHIDTransactionClear'>
+> <arg type='^{__IOHIDTransaction=}'/>
+> <retval type='v'/>
+> </function>
+9030,9033c9063,9067
+< <function name='IOHIDTransactionRemoveElement'>
+< <arg type='^{__IOHIDTransaction=}'/>
+< <arg type='^{__IOHIDElement=}'/>
+< </function>
+---
+> <function name='IOHIDTransactionRemoveElement'>
+> <arg type='^{__IOHIDTransaction=}'/>
+> <arg type='^{__IOHIDElement=}'/>
+> <retval type='v'/>
+> </function>
+9034,9038c9068,9073
+< <function name='IOHIDTransactionScheduleWithRunLoop'>
+< <arg type='^{__IOHIDTransaction=}'/>
+< <arg type='^{__CFRunLoop=}'/>
+< <arg type='^{__CFString=}'/>
+< </function>
+---
+> <function name='IOHIDTransactionScheduleWithRunLoop'>
+> <arg type='^{__IOHIDTransaction=}'/>
+> <arg type='^{__CFRunLoop=}'/>
+> <arg type='^{__CFString=}'/>
+> <retval type='v'/>
+> </function>
+9039,9042c9074,9078
+< <function name='IOHIDTransactionSetDirection'>
+< <arg type='^{__IOHIDTransaction=}'/>
+< <arg type='I'/>
+< </function>
+---
+> <function name='IOHIDTransactionSetDirection'>
+> <arg type='^{__IOHIDTransaction=}'/>
+> <arg type='I'/>
+> <retval type='v'/>
+> </function>
+9043,9048c9079,9085
+< <function name='IOHIDTransactionSetValue'>
+< <arg type='^{__IOHIDTransaction=}'/>
+< <arg type='^{__IOHIDElement=}'/>
+< <arg type='^{__IOHIDValue=}'/>
+< <arg type='L' type64='I'/>
+< </function>
+---
+> <function name='IOHIDTransactionSetValue'>
+> <arg type='^{__IOHIDTransaction=}'/>
+> <arg type='^{__IOHIDElement=}'/>
+> <arg type='^{__IOHIDValue=}'/>
+> <arg type='L' type64='I'/>
+> <retval type='v'/>
+> </function>
+9049,9053c9086,9091
+< <function name='IOHIDTransactionUnscheduleFromRunLoop'>
+< <arg type='^{__IOHIDTransaction=}'/>
+< <arg type='^{__CFRunLoop=}'/>
+< <arg type='^{__CFString=}'/>
+< </function>
+---
+> <function name='IOHIDTransactionUnscheduleFromRunLoop'>
+> <arg type='^{__IOHIDTransaction=}'/>
+> <arg type='^{__CFRunLoop=}'/>
+> <arg type='^{__CFString=}'/>
+> <retval type='v'/>
+> </function>
+9140,9142c9178,9181
+< <function name='IOIteratorReset'>
+< <arg type='I'/>
+< </function>
+---
+> <function name='IOIteratorReset'>
+> <arg type='I'/>
+> <retval type='v'/>
+> </function>
+9216,9218c9255,9258
+< <function name='IONotificationPortDestroy'>
+< <arg type='^{IONotificationPort=}'/>
+< </function>
+---
+> <function name='IONotificationPortDestroy'>
+> <arg type='^{IONotificationPort=}'/>
+> <retval type='v'/>
+> </function>
+9227,9230c9267,9271
+< <function name='IONotificationPortSetDispatchQueue'>
+< <arg type='^{IONotificationPort=}'/>
+< <arg type='@'/>
+< </function>
+---
+> <function name='IONotificationPortSetDispatchQueue'>
+> <arg type='^{IONotificationPort=}'/>
+> <arg type='@'/>
+> <retval type='v'/>
+> </function>
+9327,9329c9368,9371
+< <function name='IOPMAssertionRetain'>
+< <arg type='I'/>
+< </function>
+---
+> <function name='IOPMAssertionRetain'>
+> <arg type='I'/>
+> <retval type='v'/>
+> </function>
+9795,9797c9837,9840
+< <function name='NXCloseEventStatus'>
+< <arg type='I'/>
+< </function>
+---
+> <function name='NXCloseEventStatus'>
+> <arg type='I'/>
+> <retval type='v'/>
+> </function>
+9805,9808c9848,9852
+< <function name='NXGetClickSpace'>
+< <arg type='I'/>
+< <arg type='^{_NXSize=ff}'/>
+< </function>
+---
+> <function name='NXGetClickSpace'>
+> <arg type='I'/>
+> <arg type='^{_NXSize=ff}'/>
+> <retval type='v'/>
+> </function>
+9820,9822c9864,9867
+< <function name='NXResetKeyboard'>
+< <arg type='I'/>
+< </function>
+---
+> <function name='NXResetKeyboard'>
+> <arg type='I'/>
+> <retval type='v'/>
+> </function>
+9823,9825c9868,9871
+< <function name='NXResetMouse'>
+< <arg type='I'/>
+< </function>
+---
+> <function name='NXResetMouse'>
+> <arg type='I'/>
+> <retval type='v'/>
+> </function>
+9826,9829c9872,9876
+< <function name='NXSetClickSpace'>
+< <arg type='I'/>
+< <arg type='^{_NXSize=ff}'/>
+< </function>
+---
+> <function name='NXSetClickSpace'>
+> <arg type='I'/>
+> <arg type='^{_NXSize=ff}'/>
+> <retval type='v'/>
+> </function>
+9830,9833c9877,9881
+< <function name='NXSetClickTime'>
+< <arg type='I'/>
+< <arg type='d'/>
+< </function>
+---
+> <function name='NXSetClickTime'>
+> <arg type='I'/>
+> <arg type='d'/>
+> <retval type='v'/>
+> </function>
+9834,9837c9882,9886
+< <function name='NXSetKeyRepeatInterval'>
+< <arg type='I'/>
+< <arg type='d'/>
+< </function>
+---
+> <function name='NXSetKeyRepeatInterval'>
+> <arg type='I'/>
+> <arg type='d'/>
+> <retval type='v'/>
+> </function>
+9838,9841c9887,9891
+< <function name='NXSetKeyRepeatThreshold'>
+< <arg type='I'/>
+< <arg type='d'/>
+< </function>
+---
+> <function name='NXSetKeyRepeatThreshold'>
+> <arg type='I'/>
+> <arg type='d'/>
+> <retval type='v'/>
+> </function>
