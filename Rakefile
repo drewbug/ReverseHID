@@ -12,4 +12,6 @@ Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'ReverseHID'
   app.frameworks << 'IOBluetooth'
+  app.frameworks_dependencies << 'IOKit'
+  app.bridgesupport_files << '/System/Library/Frameworks/IOKit.framework/Resources/BridgeSupport/IOKit.bridgesupport'
 end
